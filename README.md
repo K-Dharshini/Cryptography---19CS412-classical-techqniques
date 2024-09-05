@@ -32,8 +32,6 @@ Implementation using C or python code
 
 ## PROGRAM:
 
-CaearCipher
-
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -283,22 +281,16 @@ void encryptByPlayfairCipher(char str[], char key[]) {
 int main() {
     char str[SIZE], key[SIZE];
 
-    // Key to be encrypted
-    strcpy(key, "SAVEETHA");
-    printf("Key text: %s\n", key);
-
-    // Plaintext to be encrypted
-    strcpy(str, "DHARSHINI K");
-    printf("Plain text: %s\n", str);
-
-    // Encrypt using Playfair Cipher
+    printf("Key text: %s", key);
+    scanf("%[^\n]%*c",key);
+    printf("Plain text: %s", str);
+    scanf("%[^\n]%*c",str);
     encryptByPlayfairCipher(str, key);
     printf("Cipher text: %s\n", str);
 
-    return 0;
+    return 0;
 }
 ```
-
 ## OUTPUT:
 
 Simulating Playfair Cipher
@@ -392,8 +384,9 @@ int main() {
     char dec[1000] = "";
     int n;
 
-    strcpy(msg, "DHARSHINI K");
-    printf("Input message : %s\n", msg);
+    
+    printf("Input message : ");
+    scanf("%[^\n]%*c",msg);
 
     // Convert the input message to uppercase
     for (int i = 0; i < strlen(msg); i++) {
@@ -435,7 +428,7 @@ int main() {
     }
 
     printf("Decoded message : %s\n", dec);
-    return 0;
+    return 0;
 }
 ```
 
