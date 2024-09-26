@@ -1,4 +1,4 @@
-# Cryptography---19CS412-classical-techniques
+# Cryptography---Classical-techniques
 
 # Caeser Cipher
 
